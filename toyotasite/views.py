@@ -3,4 +3,4 @@ from .models import Car
 
 def home(request):
     cars = Car.objects.all()
-    return render(request, 'base.html', {'cars': cars})
+    return render(request, 'index.html', {'cars': cars})
