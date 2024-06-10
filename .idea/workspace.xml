@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1be27ee-b3a6-4401-9184-456fd326f0c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/djangoProjectPWI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProjectPWI/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProjectPWI/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProjectPWI/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProjectPWI/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProjectPWI/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toyotasite/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toyotasite/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toyotasite/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toyotasite/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toyotasite/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toyotasite/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProjectPWI/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProjectPWI/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +32,7 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "test-adrian",
+    "git-widget-placeholder": "adrianTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +41,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adriano\PycharmProjects\djangoProjectPWI\docs\templates" />
+      <recent name="C:\Users\Adriano\PycharmProjects\djangoProjectPWI\docs" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="djangoProjectPWI" type="Python.DjangoServer" factoryName="Django server">
       <module name="djangoProjectPWI" />
@@ -100,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718051731893</updated>
-      <workItem from="1718051733868" duration="3446000" />
+      <workItem from="1718051733868" duration="4329000" />
     </task>
     <servers />
   </component>
