@@ -1,0 +1,111 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/toyota-logo-png-transparent.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toyota Corolla</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+                <a href="#about">HISTORIA</a>
+                <a href="#models">MODELE</a>
+                <a href="#prices">CENY</a>
+                <a href="#contact">KONTAKT</a>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="about-content">
+        <div class="about-description">
+            <h2>Historia</h2>
+            <p>Toyota Corolla to samochód osobowy, którego historia sięga wielu pokoleń. Najpopularniejszy, najczęściej sprzedawany samochód w historii. W 2015 roku sprzedał się w rekordowej liczbie 1,35 mln egzemplarzy. Dostępny w wielu wariantach nadwozia. Wybierz swój!</p>
+        </div>
+        <div class="about-image">
+            <img src="https://www.motortrend.com/uploads/sites/10/2015/11/2014-toyota-corolla-l-at-sedan-angular-front.png?fit=around%7C875:492" alt="Toyota Corolla">
+        </div>
+    </div>
+    </section>
+    <section id="models">
+        <h2>Modele 2024</h2>
+        <div class="models-box">
+            <div class="models-box">
+                {% for car in cars %}
+                    <div class="model-box" id="{{ car.id }}">
+                        <h3>{{ car.model }}</h3>
+                        <img src="{{ car.image.url }}" alt="{{ car.model }}">
+                        <p>Moc silnika: {{ car.engine_power }} KM</p>
+                        <p>Rodzaj napędu: {{ car.engine_type }}</p>
+                        <p>Liczba drzwi: {{ car.door_count }}</p>
+                        <p>Typ nadwozia: {{ car.body_type }}</p>
+                        <p>Dostępne kolory:
+                            {% for color in car.colors.all %}
+                                {{ color.name }}{% if not forloop.last %}, {% endif %}
+                            {% endfor %}
+                        </p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="prices">
+        <h2>Ceny modeli</h2>
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Pakiet Standard</th>
+                <th>Pakiet Podwyższony</th>
+                <th>Pakiet Premium</th>
+            </tr>
+            <tr>
+                <td>Corolla Sedan</td>
+                <td>100 000 zł</td>
+                <td>105 000 zł</td>
+                <td>110 000 zł</td>
+            </tr>
+            <tr>
+                <td>Corolla Cross</td>
+                <td>110 000 zł</td>
+                <td>115 000 zł</td>
+                <td>120 000 zł</td>
+            </tr>
+            <tr>
+                <td>Corolla Kombi TS</td>
+                <td>100 000 zł</td>
+                <td>105 000 zł</td>
+                <td>110 000 zł</td>
+            </tr>
+            <tr>
+                <td>Corolla Hatchback</td>
+                <td>100 000 zł</td>
+                <td>105 000 zł</td>
+                <td>110 000 zł</td>
+            </tr>
+            <tr>
+                <td>RAV4 Plug-In Hybrid</td>
+                <td>140 000 zł</td>
+                <td>150 000 zł</td>
+                <td>160 000 zł</td>
+            </tr>
+            <tr>
+                <td>Highlander</td>
+                <td>190 000 zł</td>
+                <td>195 000 zł</td>
+                <td>200 000 zł</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Adres: ul. Toyotowa 1 </br>00-001 Warszawa</br>
+        Telefon: 242 017 284</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Adrian Plebanek</p>
+    </footer>
+</body>
+</html>
